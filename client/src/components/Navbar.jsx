@@ -101,10 +101,10 @@ const Navbar = () => {
             </DropdownMenu>
           ) : (
             <div className="flex items-center gap-3">
-              <Button variant="outline" onClick={() => navigate("/login")}>
-                Log In
+              <Button variant="" onClick={() => navigate("/login")}>
+                Log In/SignIn
               </Button>
-              <Button onClick={() => navigate("/signup")}>Sign Up</Button>
+            
             </div>
           )}
           <DarkMode />
@@ -165,7 +165,7 @@ const MobileNavbar = ({ user }) => {
               >
                 Log In
               </Button>
-              <Button className="w-full" onClick={() => navigate("/signup")}>
+              <Button className="w-full" onClick={() => navigate("/login")}>
                 Sign Up
               </Button>
             </>
