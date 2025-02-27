@@ -3,6 +3,7 @@ import { userLoggedIn, userLoggedOut } from "../authSlice";
 
 const USER_API = "http://localhost:8000/api/v1/user/"
 
+
 export const authApi = createApi({
     reducerPath:"authApi",
     baseQuery:fetchBaseQuery({

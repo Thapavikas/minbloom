@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -64,17 +63,17 @@ const Login = () => {
   };
 
   useEffect(() => {
-    if(registerIsSuccess && registerData){
-      toast.success(registerData.message || "Signup successful.")
+    if (registerIsSuccess && registerData) {
+      toast.success(registerData.message || "Signup successful.");
     }
-    if(registerError){
+    if (registerError) {
       toast.error(registerError.data.message || "Signup Failed");
     }
-    if(loginIsSuccess && loginData){
+    if (loginIsSuccess && loginData) {
       toast.success(loginData.message || "Login successful.");
       navigate("/");
     }
-    if(loginError){ 
+    if (loginError) {
       toast.error(loginError.data.message || "login Failed");
     }
   }, [
