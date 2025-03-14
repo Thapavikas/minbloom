@@ -75,7 +75,7 @@ const Navbar = () => {
                 <DropdownMenuGroup>
                   <DropdownMenuItem>
                     <Link to="/my-learning" className="hover:text-blue-600">
-                      My Learning
+                      My Learnings
                     </Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem>
